@@ -10,20 +10,10 @@ class StatisticsServiceTest {
     void findMaxStatisticsService1() {
         StatisticsService service = new StatisticsService();
         long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
-        long expected = 12;
+        long expected = 10;
         long actual = service.findMax(incomesInBillions);
 
         assertEquals(expected, actual);
     }
 
-    @Test
-    void findMaxSatisticsService2() {
-        StatisticsService service = new StatisticsService();
-        long[] incomesInBillions = {5, 12, 8, 4, 5, 3, 6, 11, 11, 12};
-        long expected = 12;
-        long actual = service.findMax(incomesInBillions);
-
-        assertEquals(expected, actual);
-
     }
-}
